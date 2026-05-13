@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact iGAP Technologies — Get in touch for enterprise software solutions">
+  <title>Contact Us | iGAP Technologies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-logo">
+    <img src="images/logo.png" alt="iGAP Technologies Logo">
+  </div>
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li class="dropdown">
+        <a href="academy.html">Academy ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="academy.html#courses">Courses</a></li>
+          <li><a href="academy.html#internship">Internship</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="btn-nav">Get a Quote</a></li>
+    </ul>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <h1>Contact Us</h1>
+  <p>Have a project in mind? Let's talk. We'd love to hear about your goals.</p>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span>/</span>
+    <span>Contact</span>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section>
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p style="color:var(--muted);margin-bottom:30px;font-size:0.92rem;">Reach out to us for project inquiries, partnerships, or any questions about our services and academy programs.</p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-text">
+            <h4>Our Office</h4>
+            <p>Shree Apartment, Rajarampuri 4th Lane,<br>Kolhapur, Maharashtra, India</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div class="contact-item-text">
+            <h4>Phone</h4>
+            <p><a href="tel:+919561320192" style="color:var(--primary);">+91 9561320192</a><br>
+               <a href="tel:+919552610806" style="color:var(--primary);">+91 9552610806</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div class="contact-item-text">
+            <h4>Email</h4>
+            <p><a href="mailto:info@igaptechnologies.com" style="color:var(--primary);">info@igaptechnologies.com</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">⏰</div>
+          <div class="contact-item-text">
+            <h4>Business Hours</h4>
+            <p>Monday – Saturday: 9:00 AM – 6:00 PM<br>Sunday: Closed</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">🌐</div>
+          <div class="contact-item-text">
+            <h4>Academy Portal</h4>
+            <p><a href="https://igaptechnologies.com/courses" target="_blank" rel="noopener" style="color:var(--primary);">igaptechnologies.com/courses</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a subject</option>
+              <option value="project">Project Inquiry</option>
+              <option value="services">Services Information</option>
+              <option value="academy">Academy / Courses</option>
+              <option value="internship">Internship Program</option>
+              <option value="partnership">Partnership</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project or inquiry..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+          <div class="alert alert-success" id="successMsg">
+            ✅ Thank you! Your message has been sent. We'll get back to you within 24 hours.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<section class="bg-gray" style="padding:0;">
+  <div style="background:#e8f4fb;height:300px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;">
+    <span style="font-size:3rem;">📍</span>
+    <p style="color:var(--primary-dark);font-weight:600;font-size:1.1rem;">Shree Apartment, Rajarampuri 4th Lane, Kolhapur, Maharashtra</p>
+    <a href="https://maps.google.com/?q=Rajarampuri+4th+Lane+Kolhapur" target="_blank" rel="noopener" class="btn btn-primary">Open in Google Maps</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <img src="images/logo.png" alt="iGAP Logo">
+          <span>iGAP Technologies</span>
+        </div>
+        <p>Kolhapur-based premium software development company delivering enterprise-grade digital solutions for global industries since 2014.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">AI & ML</a></li>
+          <li><a href="services.html">Data Science</a></li>
+          <li><a href="services.html">Web Apps</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">ERP Solutions</a></li>
+          <li><a href="services.html">E-Commerce</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="academy.html">iGAP Academy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@igaptechnologies.com">info@igaptechnologies.com</a></li>
+          <li><a href="tel:+919561320192">+91 9561320192</a></li>
+          <li>Rajarampuri 4th Lane,<br>Kolhapur, Maharashtra</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 iGAP Technologies Pvt. Ltd. All rights reserved.</p>
+      <p>Shree Apartment, Rajarampuri 4th Lane, Kolhapur</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
